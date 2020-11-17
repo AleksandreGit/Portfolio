@@ -7,7 +7,7 @@ import { NavbarComponent } from './profile/navbar/navbar.component';
 import { IntroComponent } from './profile/intro/intro.component';
 import { PresentationComponent } from './profile/presentation/presentation.component';
 import { FooterComponent } from './profile/footer/footer.component';
-
+import { ButtonsModule, WavesModule, CollapseModule } from 'angular-bootstrap-md'
 @NgModule({
   declarations: [
     AppComponent,
