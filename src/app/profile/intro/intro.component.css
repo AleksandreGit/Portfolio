@@ -1,0 +1,10 @@
+.jumbotron {
+  margin-bottom: 0px;
+  height: 500px;
+  color: white; /* Le texte sera affiché en blanc */
+  background: url('src/assets/bg.jpg') no-repeat center center;
+}
+
+.rounded {
+  width: 180px;
+}
