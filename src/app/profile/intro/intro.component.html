@@ -1,14 +1,40 @@
-
-<mdb-card style="background-image: url('https://mdbootstrap.com/img/Photos/Others/forest2.jpg')">
-  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+<!-- Intro header -->
+<!-- Card type, cf : https://mdbootstrap.com/docs/angular/components/cards/ -->
+<mdb-card style="background-image: url('assets/bg2.png')">
+  <div class="text-header py-5 px-4">
     <div class="py-5">
+      <!-- Photo de profil -->
+      <img class="profile-picture img-fluid" src="assets/me.jpg"/>
 
-      <!-- Content -->
-      <h5 class="h5 orange-text"><mdb-icon fas icon="camera-retro"></mdb-icon> Photography</h5>
-      <h2>Jumbotron with image overlay</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis perferendis vitae cumque et quo impedit.</p>
-      <a mdbBtn gradient="peach" mdbWavesEffect> <mdb-icon fas icon="clone" class="left"></mdb-icon> View project</a>
+      <!-- Informations -->
+      <h2 class="name-intro">Alexandre Chapin</h2>
+      <p>Etudiant en 4e année d'école d'ingénieur, spécialité informatique</p>
 
+      <!-- Liens menant à d'autres informations -->
+      <a mdbBtn gradient="sunny-morning" mdbWavesEffect> <mdb-icon fas icon="at" class="left"></mdb-icon> Me contacter</a>
+      <a mdbBtn gradient="sunny-morning" mdbWavesEffect> <mdb-icon fas icon="book" class="left"></mdb-icon> Télécharger mon CV</a>
     </div>
   </div>
+
+  <!-- Adding a footer -->
+  <mdb-card-footer class="bg-dark" style="text-align: center;">
+    <!-- Linkedin button -->
+    <!--<button type="button" class="social-button sunny-morning-gradient" onclick="location.href='https://www.linkedin.com/in/alexandre-chapin/'")>
+      <mdb-icon class="social-icon" fab icon="linkedin-in"></mdb-icon>
+    </button>-->
+    <!--Github button-->
+    <!--<button type="button" class="social-button sunny-morning-gradient" onclick="location.href='https://github.com/AleksandreGit'")>
+      <mdb-icon class="social-icon" fab icon="github"></mdb-icon>
+    </button>-->
+    <div class="rounded-social-buttons">
+      <a class="social-button linkedin" href="https://www.linkedin.com/in/alexandre-chapin/">
+        <mdb-icon class="social-icon" fab icon="linkedin-in"></mdb-icon>
+      </a>
+      <a class="social-button github" href="https://github.com/AleksandreGit">
+        <mdb-icon class="social-icon" fab icon="github"></mdb-icon>
+      </a>
+    </div>
+  </mdb-card-footer>
+
+
 </mdb-card>
