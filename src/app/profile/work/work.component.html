@@ -1,0 +1,44 @@
+<!-- Titre de la partie -->
+<h2 class="title-work">Expérience professionnelle</h2>
+
+<!-- 1er job -->
+<div class="row py-lg-2">
+  <div class="col-sm-8 offset-sm-2">
+    <div class="row">
+      <!-- Cercle de gauche -->
+      <div class="col-sm-1">
+        <!-- On utilise le module ng-in-viewport pour vérifier si notr ecercle est dans le viewport ou pas -->
+          <span class="dot" inViewport (inViewportAction)="apparitionDot()"></span>
+      </div>
+      <!-- Description -->
+      <div class="col-sm-10 offset-sm-1">
+        <mdb-card class="work-exp">
+          <mdb-card-body>
+            <!-- Intitulé et date -->
+            <h3 class="work-title">Stage de cycle ingénieur <span class="work-date">Juin-Août 2020</span></h3>
+
+            <!-- Entreprise -->
+            <h2 class="work-entr">Capgemini Cesson-Sevigné</h2>
+
+            <!-- Description -->
+            <p class="work-desc">
+              Travail au sein du projet Erable (PaaS) dans un contexte Agile et de déploiement continu (DevOps).
+            </p>
+            <ul>
+              <li>
+                Mise à jour de librairies de logs en Javascript (NodeJS), Java, Php.
+              </li>
+              <li>
+                Utilisation de nombreux outils (Jenkins, Git, Puppet, Jira, Confluence, ...)
+              </li>
+              <li>
+                Travail avec la stack ELK (Elasticsearch, Logstash et Kibana)
+              </li>
+            </ul>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+</div>
+
