@@ -11,6 +11,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatIconModule } from '@angular/material/icon';
 import { WorkComponent } from './profile/work/work.component';
 import {InViewportModule} from "ng-in-viewport";
+import { SkillsComponent } from './profile/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {InViewportModule} from "ng-in-viewport";
     IntroComponent,
     PresentationComponent,
     FooterComponent,
-    WorkComponent
+    WorkComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
