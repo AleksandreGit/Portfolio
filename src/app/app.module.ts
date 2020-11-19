@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { WorkComponent } from './profile/work/work.component';
 import {InViewportModule} from "ng-in-viewport";
 import { SkillsComponent } from './profile/skills/skills.component';
+import { EducationComponent } from './profile/education/education.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SkillsComponent } from './profile/skills/skills.component';
     PresentationComponent,
     FooterComponent,
     WorkComponent,
-    SkillsComponent
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
