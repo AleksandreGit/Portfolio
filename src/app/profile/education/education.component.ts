@@ -24,8 +24,14 @@ export class EducationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const items = document.querySelectorAll('.work-animate');
-    items.forEach(item => {
+    const itemsLeft = document.querySelectorAll('.info-left-animate');
+    itemsLeft.forEach(item => {
+      item.classList.add('not-visible');
+      this.observer.observe(item);
+    });
+
+    const itemsRight = document.querySelectorAll('.info-right-animate');
+    itemsRight.forEach(item => {
       item.classList.add('not-visible');
       this.observer.observe(item);
     });

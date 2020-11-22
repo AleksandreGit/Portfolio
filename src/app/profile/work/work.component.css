@@ -5,7 +5,7 @@
 }
 
 .round-animate.not-visible {
-  transform: translateX(50px) rotateZ(180deg);
+  transform: translateX(-50px) rotateZ(40deg);
   opacity: 0;
 }
 

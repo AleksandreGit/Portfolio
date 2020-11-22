@@ -1,10 +1,21 @@
-.work-animate {
-  transform: translateX(0);
+.info-left-animate {
+  transform: translate(0);
   opacity: 1;
-  transition: transform 0.4s, opacity 0.4s;
+  transition: transform 0.8s, opacity 0.8s;
 }
 
-.work-animate.not-visible {
+.info-left-animate.not-visible {
+  transform: translate(60px);
+  opacity: 0;
+}
+
+.info-right-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.info-right-animate.not-visible {
   transform: translateX(50px);
   opacity: 0;
 }
