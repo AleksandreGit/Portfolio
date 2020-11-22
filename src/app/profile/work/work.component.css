@@ -1,3 +1,14 @@
+.round-animate {
+  transform: translateX(0) rotateZ(0deg);
+  opacity: 1;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.round-animate.not-visible {
+  transform: translateX(50px) rotateZ(180deg);
+  opacity: 0;
+}
+
 .title-work {
   text-align: center;
   font-weight: bold;
