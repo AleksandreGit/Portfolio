@@ -13,6 +13,7 @@ import { WorkComponent } from './profile/work/work.component';
 import {InViewportModule} from "ng-in-viewport";
 import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { EducationComponent } from './profile/education/education.component';
     SkillsComponent,
     EducationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MDBBootstrapModule.forRoot(),
-    MatIconModule,
-    InViewportModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MDBBootstrapModule.forRoot(),
+        MatIconModule,
+        InViewportModule,
+        MatProgressBarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,49 @@
-<p>skills works!</p>
+<div class="container-fluid">
+  <h2 class="title-skills">Compétences</h2>
+
+  <div class="col-sm-8 offset-sm-2 div-skills">
+    <div class="row">
+      <!-- First col of skills -->
+      <div class="col-sm-6">
+        <!-- First skill-->
+        <div class="row">
+          <div class="col-sm-2">
+            <p class="name-skill">Java</p>
+          </div>
+          <mat-progress-bar
+            class="col-sm-8 bar-skills"
+            [color]="color"
+            [mode]="mode"
+            [value]="value">
+          </mat-progress-bar>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <p class="name-skill">C++</p>
+          </div>
+          <mat-progress-bar
+            class="col-sm-8 bar-skills"
+            [color]="color"
+            [mode]="mode"
+            [value]="value">
+          </mat-progress-bar>
+        </div>
+      </div>
+      <!-- Second col of skills-->
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-2">
+            <p class="name-skill">C#</p>
+          </div>
+          <mat-progress-bar
+            class="col-sm-8 bar-skills"
+            [color]="color"
+            [mode]="mode"
+            [value]="value">
+          </mat-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
