@@ -38,7 +38,7 @@
 .background {
   left: 0;
   right: 0;
-  background: url("src/assets/bg.png") no-repeat center;
+  background: url("src/assets/bg2.png") no-repeat center;
   filter: blur(3px);
 }
 
