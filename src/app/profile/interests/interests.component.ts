@@ -7,14 +7,16 @@ import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
   styleUrls: ['./interests.component.css']
 })
 export class InterestsComponent implements OnInit {
-  options: CloudOptions = {
+  public options: CloudOptions = {
     // if width is between 0 and 1 it will be set to the width of the upper element multiplied by the value
-    width: 1000,
+    width: 1,
     // if height is between 0 and 1 it will be set to the height of the upper element multiplied by the value
-    height: 400,
+    height: 300,
+    realignOnResize: true,
+    overflow: false,
   };
 
-  data: CloudData[] = [
+  public data: CloudData[] = [
     {text: 'Programmation', weight: 10, color: '#03293e'},
     {text: 'Réalité virtuelle', weight: 10, color: '#09679c'},
     {text: 'Rendu 3D', weight: 10, color: '#07527c'},

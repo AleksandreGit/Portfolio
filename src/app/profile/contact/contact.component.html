@@ -2,24 +2,29 @@
   <h2 class="title-contact">Contact</h2>
   <div class="row">
     <div class="col-sm-4 offset-sm-4 contact-div">
+      <!-- Formulaire -->
       <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <!-- Champ nom -->
         <div class="row py-sm-1">
           <label for="name">Nom :</label>
           <input class="form-control" id="name" type="text" formControlName="name" placeholder="Votre nom">
         </div>
+        <!-- Champ email -->
         <div class="row py-sm-1">
           <label for="mail">Mail :</label>
           <input class="form-control" id="mail" type="text" formControlName="mail" placeholder="Votre email">
         </div>
+        <!-- Champ titre -->
         <div class="row py-sm-1">
           <label for="subject">Sujet :</label>
           <input class="form-control" id="subject" type="text" formControlName="subject" placeholder="Titre de votre message">
         </div>
+        <!-- Champ message -->
         <div class="row py-sm-1">
           <label for="msg">Message</label>
           <textarea class="form-control" id="msg" rows="3"  placeholder="Contenu de votre message"></textarea>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="submit"  onclick="location.href='alexchapin@hotmail.com';">Envoyer</button>
       </form>
 
     </div>
