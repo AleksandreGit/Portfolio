@@ -52,3 +52,10 @@
 ::ng-deep .mat-progress-bar-buffer {
   background: #e6ebf1;
 }
+
+
+.dot {
+  height: 30px;
+  width: auto;
+  margin-top: 10px;
+}
