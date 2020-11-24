@@ -4,8 +4,17 @@
   font-size: 30px;
 }
 
+.contact-div {
+  background-color: #CCCCCC;
+  border-radius: 20px;
+}
+
 form {
   text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 button {
