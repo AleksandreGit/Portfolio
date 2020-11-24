@@ -17,6 +17,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ProjectsComponent } from './profile/projects/projects.component';
 import { TagCloudModule } from 'angular-tag-cloud-module';
 import { InterestsComponent } from './profile/interests/interests.component';
+import { ContactComponent } from './profile/contact/contact.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,17 +31,19 @@ import { InterestsComponent } from './profile/interests/interests.component';
     SkillsComponent,
     EducationComponent,
     ProjectsComponent,
-    InterestsComponent
+    InterestsComponent,
+    ContactComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MDBBootstrapModule.forRoot(),
-        MatIconModule,
-        InViewportModule,
-        MatProgressBarModule,
-        TagCloudModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    MatIconModule,
+    InViewportModule,
+    MatProgressBarModule,
+    TagCloudModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
