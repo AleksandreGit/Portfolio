@@ -1,12 +1,10 @@
 .round-animate {
   transform: translateX(0) rotateZ(0deg);
-  opacity: 1;
-  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .round-animate.not-visible {
   transform: translateX(-50px) rotateZ(40deg);
-  opacity: 0;
 }
 
 .title-work {

@@ -19,3 +19,14 @@ mdb-card-body h4 {
 mdb-card-body p {
   text-align: justify;
 }
+
+.proj-body {
+  transform: scaleY(1);
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.proj-body.not-visible {
+  opacity: 0;
+  transform: scaleY(0);
+}
