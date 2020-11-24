@@ -10,11 +10,13 @@ import { FooterComponent } from './profile/footer/footer.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatIconModule } from '@angular/material/icon';
 import { WorkComponent } from './profile/work/work.component';
-import {InViewportModule} from "ng-in-viewport";
+import {InViewportModule} from 'ng-in-viewport';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ProjectsComponent } from './profile/projects/projects.component';
+import { TagCloudModule } from 'angular-tag-cloud-module';
+import { InterestsComponent } from './profile/interests/interests.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProjectsComponent } from './profile/projects/projects.component';
     WorkComponent,
     SkillsComponent,
     EducationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    InterestsComponent
   ],
     imports: [
         BrowserModule,
@@ -34,7 +37,8 @@ import { ProjectsComponent } from './profile/projects/projects.component';
         MDBBootstrapModule.forRoot(),
         MatIconModule,
         InViewportModule,
-        MatProgressBarModule
+        MatProgressBarModule,
+        TagCloudModule
     ],
   providers: [],
   bootstrap: [AppComponent]
