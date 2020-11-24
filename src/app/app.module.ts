@@ -14,6 +14,7 @@ import {InViewportModule} from "ng-in-viewport";
 import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ProjectsComponent } from './profile/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FooterComponent,
     WorkComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent
   ],
     imports: [
         BrowserModule,
