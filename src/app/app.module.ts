@@ -19,6 +19,12 @@ import { TagCloudModule } from 'angular-tag-cloud-module';
 import { InterestsComponent } from './profile/interests/interests.component';
 import { ContactComponent } from './profile/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { AddaComponent } from './profile/projects/adda/adda.component';
+import { IslandsComponent } from './profile/projects/islands/islands.component';
+import { ThurstonComponent } from './profile/projects/thurston/thurston.component';
+import { RaymarchComponent } from './profile/projects/raymarch/raymarch.component';
+import { VaisseauComponent } from './profile/projects/vaisseau/vaisseau.component';
+import { PortfolioComponent } from './profile/projects/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import {ReactiveFormsModule} from '@angular/forms';
     EducationComponent,
     ProjectsComponent,
     InterestsComponent,
-    ContactComponent
+    ContactComponent,
+    AddaComponent,
+    IslandsComponent,
+    ThurstonComponent,
+    RaymarchComponent,
+    VaisseauComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

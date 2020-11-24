@@ -1,3 +1,11 @@
+a {
+  color: white;
+}
+
+a:hover {
+   color: white;
+}
+
 .title-project {
   text-align: center;
   font-weight: bold;
