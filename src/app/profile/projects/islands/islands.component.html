@@ -1,15 +1,34 @@
 <app-navbar></app-navbar>
 
-<!-- Project image -->
-<mdb-card class="project-picture"></mdb-card>
 <!-- Content -->
 <div class="container-fluid">
   <div class="row py-lg-5">
     <div class="col-sm-8 offset-sm-2 project-content">
-      <h2>Islanders, un jeu vidéo en Angular</h2>
-      <p>
-        TODO
-      </p>
+      <!-- Project image -->
+      <mdb-card>
+        <mdb-card-title>
+          <h2>ISLANDERS, UN JEU VIDEO EN ANGULAR</h2>
+          <h4><b>Fin :</b> Janvier 2021</h4>
+          <h4><b>Durée :</b> 5 mois</h4>
+        </mdb-card-title>
+        <mdb-card-img class="project-picture" src="assets/ISL_proj.png"></mdb-card-img>
+        <mdb-card-body>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>
+                Ce projet a été réalisé dans le cadre du cours de <b>CPOO</b> (Conception et Programmation Orientée Objet avancée) de 4e
+                année en département informatique à l'Insa de Rennes. Celui-ci consistait en la conception d'un jeu vidéo. <br>
+                Par binômes et à partir d'un cahier des charges pré-défini, il a fallu concevoir la structure de notre jeu (sous formes de
+                diagrammes de classes, schémas UML, diagrammes de séquences, Mockup, ...). avant d'être déployé à l'aide du framework
+                <b>Angular</b> pour le <i>front-end</i> et fonctionner avec une <b>API REST</b> développée en <b>Java</b> pour le
+                <i>back-end</i>.
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
     </div>
   </div>
 </div>
+
+<app-projects></app-projects>

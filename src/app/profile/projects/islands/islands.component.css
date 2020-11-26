@@ -1,11 +1,32 @@
-.project-picture {
-  background: url('src/assets/ISL_proj.png') no-repeat center;
-  top: 0;
-  background-size: 100%;
-  height: 500px;
+
+mdb-card-title {
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #24292e;
+  color: white;
 }
 
-.project-content {
-  margin-top: 10px;
-  text-align: center;
+mdb-card-title h4{
+  margin-left: 20px;
+}
+
+mdb-card-title h2{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+mdb-card-img {
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: #24292e 1px solid;
+}
+
+.project-content h3{
+  text-align: left;
+  text-emphasis: #24292e;
+}
+
+.project-content p {
+  text-align: justify;
 }
