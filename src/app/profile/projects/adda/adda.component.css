@@ -1,0 +1,11 @@
+.project-picture {
+  background: url('src/assets/NAV_proj.jpg') no-repeat center;
+  top: 0;
+  background-size: 100%;
+  height: 500px;
+}
+
+.project-content {
+  margin-top: 10px;
+  text-align: center;
+}

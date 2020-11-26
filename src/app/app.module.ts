@@ -25,6 +25,7 @@ import { ThurstonComponent } from './profile/projects/thurston/thurston.componen
 import { RaymarchComponent } from './profile/projects/raymarch/raymarch.component';
 import { VaisseauComponent } from './profile/projects/vaisseau/vaisseau.component';
 import { PortfolioComponent } from './profile/projects/portfolio/portfolio.component';
+import { MainComponent } from './profile/main/main.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PortfolioComponent } from './profile/projects/portfolio/portfolio.compo
     ThurstonComponent,
     RaymarchComponent,
     VaisseauComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
