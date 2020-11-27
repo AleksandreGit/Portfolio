@@ -16,17 +16,47 @@ mdb-card-title h2{
   font-weight: bolder;
 }
 
-mdb-card-img {
-  margin: 20px;
-  padding-bottom: 10px;
-  border-bottom: #24292e 1px solid;
+.technos {
+  background-color: #24292e;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: white;
+}
+.technos p {
+   margin-left: 10px;
+ }
+
+.dot {
+  height: 22px;
+  width: auto;
+  margin-left:10px;
 }
 
-.project-content h3{
+mdb-card-img {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-content h3 {
   text-align: left;
   text-emphasis: #24292e;
 }
 
-.project-content p {
+.description h4 {
+  margin-top: 20px;
+}
+
+.description p {
   text-align: justify;
 }
+
+.video-title{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video {
+  margin: auto;
+}
+

@@ -25,7 +25,10 @@ mdb-card-body h4 {
 }
 
 mdb-card-body p {
-  text-align: justify;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #666666;
 }
 
 .proj-body {

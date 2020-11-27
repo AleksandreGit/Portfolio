@@ -1,17 +1,85 @@
 <app-navbar></app-navbar>
 
-<!-- Project image -->
-<mdb-card class="project-picture"></mdb-card>
 <!-- Content -->
 <div class="container-fluid">
   <div class="row py-lg-5">
-    <div class="col-sm-8 offset-sm-2 project-content">
-      <h2>NAVI : Une application d'annotation de documents anciens</h2>
-      <p>
-        Au cours de ma 3e année à l'Insa de Rennes, j'ai eu l'occasion de participer à mon premier projet
-        de programmation en équipe. Ce projet
-      </p>
+    <div class="col-sm-6 offset-sm-3 project-content">
+      <mdb-card>
+        <!-- Project's informations -->
+        <mdb-card-title>
+          <!-- Project Title -->
+          <h2>NAVI, UNE APPLICATION D'ANNOTATION DE DOCUMENTS ANCIENS</h2>
+          <!-- Project date + duration -->
+          <h4><b>Fin :</b> Juin 2020</h4>
+          <h4><b>Durée :</b> 10 mois</h4>
+        </mdb-card-title>
+        <!-- Project image -->
+        <mdb-card-img class="project-picture" src="assets/NAV_proj.jpg"></mdb-card-img>
+        <!-- About the project -->
+        <mdb-card-body>
+          <!-- Technologies used -->
+          <div class="row technos">
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Technologies : </b></h4>
+                <img class="dot" src="assets/skills/python.png"/>
+                <img class="dot" src="assets/skills/qt.png"/>
+                <img class="dot" src="assets/skills/opencv.png"/>
+                <img class="dot" src="assets/skills/gitlab.png"/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Tags : </b></h4>
+                <p>Python, Qt, OpenCV, SQLite, UI</p>
+              </div>
+            </div>
+          </div>
+          <div class="row description">
+            <!-- Description of the project -->
+            <div class="col-sm-6">
+              <h4><b>Description :</b></h4>
+              <p>
+                Dans le cadre du module d'Etude Pratique en 3e année de département informatique à l'Insa de Rennes,
+                j'ai eu l'occasion de participer à mon premier projet informatique en équipe. L'objectif de ce projet
+                était de réaliser une application permettant de simplifier l'annotation de documents anciens.
+              </p>
+            </div>
+            <!-- Apports du projet -->
+            <div class="col-sm-6">
+              <h4><b>Bilan :</b></h4>
+              <p>
+                TODO
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+      <!-- Images of the project -->
+      <!-- TODO: add images from project -->
+      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+        </mdb-carousel-item>
+      </mdb-carousel>
+      <!-- Video TODO: ajouter une vidéo où on joue au jeu-->
+      <h4 class="video-title"><b>Résultat :</b></h4>
+      <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c7O_dv-8rrw" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="video">
+        </iframe>
+      </div>
     </div>
   </div>
 </div>
+
+<app-projects></app-projects>
 
