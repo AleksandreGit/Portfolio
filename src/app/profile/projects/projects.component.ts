@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ViewportScroller} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +11,7 @@ export class ProjectsComponent implements OnInit {
 
   private observer: IntersectionObserver;
 
-  constructor() {
+  constructor(private viewportScroller: ViewportScroller, private router: Router) {
     this.observer = new IntersectionObserver(observables => {
       observables.forEach(observ => {
         if (observ.intersectionRatio > 0) {
@@ -27,6 +29,12 @@ export class ProjectsComponent implements OnInit {
     items.forEach(item => {
       item.classList.add('not-visible');
       this.observer.observe(item);
+    });
+  }
+
+  public onClick(elementId: string): void {
+    this.router.navigateByUrl(elementId).then(r => {
+      this.viewportScroller.scrollToAnchor('top');
     });
   }
 
