@@ -44,6 +44,12 @@ export class SkillsComponent implements OnInit {
       item.classList.add('not-visible');
       this.observer.observe(item);
     });
+
+    const skills = document.querySelectorAll('.icon-skills');
+    skills.forEach(item => {
+      item.classList.add('not-visible');
+      this.observer.observe(item);
+    });
   }
 
 }

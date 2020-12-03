@@ -54,8 +54,18 @@
 }
 
 
-.dot {
+.icon-skills {
   height: 30px;
   width: auto;
   margin-top: 10px;
+  opacity: 1;
+  transform: translateX(0) scaleX(1) rotate(0deg);
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.icon-skills.not-visible {
+  opacity: 0;
+  transform: translateX(-100px) scaleX(0.2) rotate(80deg);
+  height: 30px;
+  width: auto;
 }

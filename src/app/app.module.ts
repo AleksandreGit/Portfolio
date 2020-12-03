@@ -26,6 +26,7 @@ import { RaymarchComponent } from './profile/projects/raymarch/raymarch.componen
 import { VaisseauComponent } from './profile/projects/vaisseau/vaisseau.component';
 import { PortfolioComponent } from './profile/projects/portfolio/portfolio.component';
 import { MainComponent } from './profile/main/main.component';
+import { ArticlesComponent } from './profile/articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MainComponent } from './profile/main/main.component';
     RaymarchComponent,
     VaisseauComponent,
     PortfolioComponent,
-    MainComponent
+    MainComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
