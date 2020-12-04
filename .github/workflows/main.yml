@@ -24,4 +24,3 @@ jobs:
           server:  ${{ secrets.server }}
           username:  ${{ secrets.login }}
           password: ${{ secrets.password }}
-          local-dir: ${{ secrets.dir }}
