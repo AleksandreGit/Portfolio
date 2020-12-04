@@ -14,7 +14,8 @@ jobs:
           node-version: '12'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm clean install
+
       - name: Build
         run: npm run build:ci
 
@@ -24,15 +25,11 @@ jobs:
           server:  ${{ secrets.server }}
           username:  ${{ secrets.login }}
           password: ${{ secrets.password }}
-          server-dir: ./www/
           exclude: .git*
             - .git*/**
             -  **/.git*/**
             - node_module*
             - node_modules/**
             - node_modules/**/*
-            - src*
-            - src/**
-            - src/**/*
             - e2e
             - .idea
