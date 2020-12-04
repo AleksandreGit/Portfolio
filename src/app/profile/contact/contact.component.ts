@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,20 +8,19 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  checkoutForm;
-  constructor(private formBuilder: FormBuilder) {
-    this.checkoutForm = this.formBuilder.group({
-      name: '',
-      address: ''
+
+  public formDatas: FormGroup;
+
+  constructor(private builder: FormBuilder) {
+    this.formDatas = this.builder.group({
+      name: new FormControl('', [Validators.required]),
+      mail: new FormControl('', [Validators.required,
+      Validators.email]),
+      subject: new FormControl('', [Validators.required]),
+      message: new FormControl('', [Validators.required])
     });
   }
 
   ngOnInit(): void {
   }
-
-
-  onSubmit(customerData: string): void{
-    this.checkoutForm.reset();
-  }
-
 }

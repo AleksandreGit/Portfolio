@@ -3,29 +3,32 @@
   <div class="row">
     <div class="col-sm-4 offset-sm-4 contact-div">
       <!-- Formulaire -->
-      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+      <form [formGroup]="formDatas"
+            action="https://formspree.io/f/xayldrov"
+            method="POST">
         <!-- Champ nom -->
         <div class="row py-sm-1">
           <label for="name">Nom :</label>
-          <input class="form-control" id="name" type="text" formControlName="name" placeholder="Votre nom">
+          <input class="form-control" id="name" type="text" name="name" formControlName="name" placeholder="Votre nom">
         </div>
         <!-- Champ email -->
         <div class="row py-sm-1">
           <label for="mail">Mail :</label>
-          <input class="form-control" id="mail" type="text" formControlName="mail" placeholder="Votre email">
+          <input class="form-control" id="mail" type="text" name="_replyto" formControlName="mail"  placeholder="Votre email">
         </div>
         <!-- Champ titre -->
         <div class="row py-sm-1">
           <label for="subject">Sujet :</label>
-          <input class="form-control" id="subject" type="text" formControlName="subject" placeholder="Titre de votre message">
+          <input class="form-control" id="subject" type="text" name="subject" formControlName="subject" placeholder="Titre de votre message">
         </div>
         <!-- Champ message -->
         <div class="row py-sm-1">
-          <label for="msg">Message :</label>
-          <textarea class="form-control" id="msg" rows="3"  placeholder="Contenu de votre message"></textarea>
+          <label for="message">Message :</label>
+          <textarea class="form-control" id="message" rows="3" name="message" formControlName="message" placeholder="Contenu de votre message"></textarea>
         </div>
-        <button type="submit"  onclick="location.href='alexchapin@hotmail.com';">Envoyer</button>
+        <button type="submit" [disabled]="!formDatas.valid">Envoyer</button>
       </form>
+
 
     </div>
   </div>
