@@ -19,6 +19,7 @@ import { TagCloudModule } from 'angular-tag-cloud-module';
 import { InterestsComponent } from './profile/interests/interests.component';
 import { ContactComponent } from './profile/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import { AddaComponent } from './profile/projects/adda/adda.component';
 import { IslandsComponent } from './profile/projects/islands/islands.component';
 import { ThurstonComponent } from './profile/projects/thurston/thurston.component';
@@ -60,6 +61,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatProgressBarModule,
     TagCloudModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
   ],
   providers: [],
