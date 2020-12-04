@@ -27,10 +27,10 @@ jobs:
           exclude: .git*
             - .git*/**
             -  **/.git*/**
-            - node_module
+            - node_module*
             - node_modules/**
             - node_modules/**/*
-            - src
+            - src*
             - src/**
             - src/**/*
             - e2e
