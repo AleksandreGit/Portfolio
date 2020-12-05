@@ -18,8 +18,6 @@ import { ProjectsComponent } from './profile/projects/projects.component';
 import { TagCloudModule } from 'angular-tag-cloud-module';
 import { InterestsComponent } from './profile/interests/interests.component';
 import { ContactComponent } from './profile/contact/contact.component';
-import {ReactiveFormsModule} from '@angular/forms';
-import {FormsModule} from '@angular/forms';
 import { AddaComponent } from './profile/projects/adda/adda.component';
 import { IslandsComponent } from './profile/projects/islands/islands.component';
 import { ThurstonComponent } from './profile/projects/thurston/thurston.component';
@@ -28,7 +26,7 @@ import { VaisseauComponent } from './profile/projects/vaisseau/vaisseau.componen
 import { PortfolioComponent } from './profile/projects/portfolio/portfolio.component';
 import { MainComponent } from './profile/main/main.component';
 import { ArticlesComponent } from './profile/articles/articles.component';
-import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -60,9 +58,7 @@ import {HttpClientModule} from '@angular/common/http';
     InViewportModule,
     MatProgressBarModule,
     TagCloudModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -42,3 +42,8 @@ button:active {
   border-color: rgba(0,0,0,0.9);
 }
 
+.error {
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}

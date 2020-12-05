@@ -3,32 +3,63 @@
   <div class="row">
     <div class="col-sm-4 offset-sm-4 contact-div">
       <!-- Formulaire -->
-      <form
-        action="https://formspree.io/f/xayldrov" method="POST">
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm" >
         <!-- Champ nom -->
         <div class="row py-sm-1">
-          <label for="name">Nom :</label>
-          <input class="form-control" id="name" type="text" name="name" placeholder="Votre nom" required="">
+          <label>Nom :</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            [(ngModel)]="name"
+            #nameInput="ngModel"
+            placeholder="Votre nom"
+            required>
+          <p class="error" *ngIf="nameInput.invalid && nameInput.touched">Nom requis</p>
         </div>
         <!-- Champ email -->
         <div class="row py-sm-1">
-          <label for="email-address">Mail :</label>
-          <input class="form-control" id="email-address" type="text" name="_replyto" placeholder="Votre email" required="">
+          <label>Mail :</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            #emailInput="ngModel"
+            placeholder="Votre email"
+            required
+            email>
+          <p class="error" *ngIf="emailInput.invalid && emailInput.touched">Email requis et doit être au bon format</p>
         </div>
         <!-- Champ titre -->
         <div class="row py-sm-1">
-          <label for="email-subject">Sujet :</label>
-          <input class="form-control" id="email-subject" type="text" name="_subject"placeholder="Titre de votre message" required="">
+          <label>Sujet :</label>
+          <input
+            class="form-control"
+            type="text"
+            name="subject"
+            [(ngModel)]="subject"
+            #subjectInput="ngModel"
+            placeholder="Titre de votre message"
+            required>
+          <p class="error" *ngIf="subjectInput.invalid && subjectInput.touched">Sujet de message requis</p>
         </div>
         <!-- Champ message -->
         <div class="row py-sm-1">
-          <label for="message">Message :</label>
-          <textarea class="form-control" id="message" rows="3" name="message" placeholder="Contenu de votre message"></textarea>
+          <label>Message :</label>
+          <textarea
+            class="form-control"
+            rows="3"
+            name="message"
+            [(ngModel)]="message"
+            placeholder="Contenu de votre message"></textarea>
         </div>
-        <button type="submit">Envoyer</button>
+        <button
+          type="submit"
+          [disabled]="contactForm.invalid">
+          Envoyer
+        </button>
       </form>
-
-
     </div>
   </div>
 </div>
