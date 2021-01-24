@@ -1,64 +1,30 @@
 <div class="container-fluid py-lg-5" id="cont">
-  <h2 class="title-contact">Contact (en travaux)</h2>
+  <h2 class="title-contact">Contact</h2>
   <div class="row">
     <div class="col-sm-4 offset-sm-4 contact-div">
       <!-- Formulaire -->
-      <form (ngSubmit)="submitForm()" #contactForm="ngForm" >
-        <!-- Champ nom -->
-        <div class="row py-sm-1">
-          <label>Nom :</label>
-          <input
-            class="form-control"
-            type="text"
-            name="name"
-            [(ngModel)]="name"
-            #nameInput="ngModel"
-            placeholder="Votre nom"
-            required>
-          <p class="error" *ngIf="nameInput.invalid && nameInput.touched">Nom requis</p>
+      <form class="contact" [formGroup]="form" method="post" (ngSubmit)="submitForm()">
+        <mat-form-field>
+          <mat-label>Nom</mat-label>
+          <input matInput [formControl]="name" placeholder="Votre nom" required>
+          <mat-error *ngIf="name.invalid">Veuillez entrer votre nom</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Mail</mat-label>
+          <input matInput [formControl]="email" placeholder="email@example.com" required>
+          <mat-error *ngIf="email.invalid">Veuillez entrer un mail valide</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput [formControl]="message" maxlength="2048" placeholder="Votre message (n'oubliez pas d'indiquer le sujet)" required></textarea>
+          <mat-hint align="end"> {{message.value?.length || 0}}/2048</mat-hint>
+          <mat-error *ngIf="message.invalid">Veuillez entrer un message</mat-error>
+        </mat-form-field>
+        <button [disabled]="isLoading" class="submit" type="submit">Envoyer</button>
+        <input [formControl]="honeypot" class="hidden" type="text" />
+        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+          <span>{{responseMessage}}</span>
         </div>
-        <!-- Champ email -->
-        <div class="row py-sm-1">
-          <label>Mail :</label>
-          <input
-            class="form-control"
-            type="email"
-            name="email"
-            [(ngModel)]="email"
-            #emailInput="ngModel"
-            placeholder="Votre email"
-            required
-            email>
-          <p class="error" *ngIf="emailInput.invalid && emailInput.touched">Email requis et doit être au bon format</p>
-        </div>
-        <!-- Champ titre -->
-        <div class="row py-sm-1">
-          <label>Sujet :</label>
-          <input
-            class="form-control"
-            type="text"
-            name="subject"
-            [(ngModel)]="subject"
-            #subjectInput="ngModel"
-            placeholder="Titre de votre message"
-            required>
-          <p class="error" *ngIf="subjectInput.invalid && subjectInput.touched">Sujet de message requis</p>
-        </div>
-        <!-- Champ message -->
-        <div class="row py-sm-1">
-          <label>Message :</label>
-          <textarea
-            class="form-control"
-            rows="3"
-            name="message"
-            [(ngModel)]="message"
-            placeholder="Contenu de votre message"></textarea>
-        </div>
-        <button
-          type="submit"
-          [disabled]="contactForm.invalid">
-          Envoyer
-        </button>
       </form>
     </div>
   </div>

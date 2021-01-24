@@ -26,7 +26,11 @@ import { VaisseauComponent } from './profile/projects/vaisseau/vaisseau.componen
 import { PortfolioComponent } from './profile/projects/portfolio/portfolio.component';
 import { MainComponent } from './profile/main/main.component';
 import { ArticlesComponent } from './profile/articles/articles.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -53,12 +57,17 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot(),
     MatIconModule,
     InViewportModule,
     MatProgressBarModule,
     TagCloudModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
