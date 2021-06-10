@@ -1,9 +1,54 @@
 <div class="container-fluid py-lg-5" id="proj">
   <h2 class="title-project">Projets</h2>
   <div class="col-sm-8 offset-sm-2">
+
+
     <!-- FIRST ROW -->
     <div class="row ">
-      <!-- First Project -->
+      <div class="col-sm-4 proj-body">
+        <mdb-card class="project-card">
+          <mdb-card-img src="assets/SUR_proj_sm.PNG" alt="Création d'un jeu vidéo"></mdb-card-img>
+          <mdb-card-body>
+            <h4>Création d'un jeu vidéo en C++ et SFML</h4>
+            <p>Janvier 2021 - ...</p>
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect  (click)="onClick('jeu_video')"> <mdb-icon fas icon="angle-right"></mdb-icon> Voir plus</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+      <div class="col-sm-4 proj-body">
+        <mdb-card class="project-card">
+          <mdb-card-img src="assets/GAM_proj_sm.PNG" alt="Création d'un moteur de jeu vidéo"></mdb-card-img>
+          <mdb-card-body>
+            <h4>Création d'un moteur de jeu vidéo</h4>
+            <p>Mars - Juin 2021</p>
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect  (click)="onClick('moteur')"> <mdb-icon fas icon="angle-right"></mdb-icon> Voir plus</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+      <div class="col-sm-4 proj-body">
+        <mdb-card class="project-card">
+          <mdb-card-img src="assets/XRAY_proj_sm.jpeg" alt="X-Ray Project"></mdb-card-img>
+          <mdb-card-body>
+            <h4>Détection de pneumonie sur des images X-Ray</h4>
+            <p>Mars - Juin 2021</p>
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect (click)="onClick('xray')"> <mdb-icon fas icon="angle-right"></mdb-icon> Voir plus</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+
+    <!-- SECOND ROW -->
+    <div class="row py-sm-5 ">
+      <div class="col-sm-4 proj-body">
+        <mdb-card class="project-card">
+          <mdb-card-img src="assets/COV_proj_sm.jpg" alt="Détection port du masque"></mdb-card-img>
+          <mdb-card-body>
+            <h4>Vérification du port du masque</h4>
+            <p>Mars 2021</p>
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect  (click)="onClick('masque')"> <mdb-icon fas icon="angle-right"></mdb-icon> Voir plus</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/LOG_proj_sm.png" alt="Géométries de Thurston"></mdb-card-img>
@@ -14,7 +59,6 @@
           </mdb-card-body>
         </mdb-card>
       </div>
-      <!-- Second Project -->
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/ISL_proj_sm.png" alt="Island project"></mdb-card-img>
@@ -25,7 +69,10 @@
           </mdb-card-body>
         </mdb-card>
       </div>
-      <!-- Third Project -->
+    </div>
+
+    <!-- THIRD ROW -->
+    <div class="row py-sm-5 ">
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/POR_proj_sm.PNG" alt="Portoflio"></mdb-card-img>
@@ -36,10 +83,6 @@
           </mdb-card-body>
         </mdb-card>
       </div>
-    </div>
-    <!-- SECOND ROW -->
-    <div class="row py-sm-5">
-      <!-- Fourth Project -->
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/RAY_proj_sm.PNG" alt="Raymarching sous Unity"></mdb-card-img>
@@ -50,7 +93,6 @@
           </mdb-card-body>
         </mdb-card>
       </div>
-      <!-- Fifth Project -->
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/IG_proj_sm.jpg" alt="Animation les Zinzins de l'espace">
@@ -62,7 +104,10 @@
         </mdb-card-body>
         </mdb-card>
       </div>
-      <!-- Sixth Project -->
+    </div>
+
+    <!-- FOURTH ROW -->
+    <div class="row py-sm-5">
       <div class="col-sm-4 proj-body">
         <mdb-card class="project-card">
           <mdb-card-img src="assets/NAV_proj_sm.jpg" alt="Application d'annotation de documents anciens"></mdb-card-img>
@@ -74,6 +119,5 @@
         </mdb-card>
       </div>
     </div>
-    <p>Autres projets en cours d'ajout (ex.: faire jouer une IA à Doom, découverte d'OpenGL au travers d'exercices)</p>
   </div>
 </div>
