@@ -34,7 +34,10 @@ export class ProjectsComponent implements OnInit {
 
   public onClick(elementId: string): void {
     this.router.navigateByUrl(elementId).then(r => {
-      this.viewportScroller.scrollToAnchor('top');
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
+
     });
   }
 

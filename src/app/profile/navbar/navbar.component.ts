@@ -15,7 +15,9 @@ export class NavbarComponent implements OnInit {
 
   public onClick(elementId: string): void {
     this.router.navigateByUrl('').then(r => {
-      this.viewportScroller.scrollToAnchor(elementId);
+      setTimeout(() => {
+        this.viewportScroller.scrollToAnchor(elementId);
+      }, 400);
     });
   }
 

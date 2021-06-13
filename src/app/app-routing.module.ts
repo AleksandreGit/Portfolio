@@ -7,6 +7,8 @@ import {PortfolioComponent} from './profile/projects/portfolio/portfolio.compone
 import {RaymarchComponent} from './profile/projects/raymarch/raymarch.component';
 import {ThurstonComponent} from './profile/projects/thurston/thurston.component';
 import {VaisseauComponent} from './profile/projects/vaisseau/vaisseau.component';
+import {MasquesComponent} from './profile/projects/masques/masques.component';
+import {XrayComponent} from './profile/projects/xray/xray.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -16,11 +18,15 @@ const routes: Routes = [
   { path: 'raymarch', component: RaymarchComponent },
   { path: 'thurston', component: ThurstonComponent },
   { path: 'vaisseau', component: VaisseauComponent },
+  { path: 'masque', component: MasquesComponent },
+  { path: 'xray', component: XrayComponent },
 ];
 
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [ RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

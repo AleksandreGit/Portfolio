@@ -31,6 +31,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
+import { MasquesComponent } from './profile/projects/masques/masques.component';
+import { XrayComponent } from './profile/projects/xray/xray.component';
+import { MoteurjeuComponent } from './profile/projects/moteurjeu/moteurjeu.component';
+import { JeuvideoComponent } from './profile/projects/jeuvideo/jeuvideo.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { MatInputModule} from '@angular/material/input';
     VaisseauComponent,
     PortfolioComponent,
     MainComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    MasquesComponent,
+    XrayComponent,
+    MoteurjeuComponent,
+    JeuvideoComponent
   ],
   imports: [
     BrowserModule,
