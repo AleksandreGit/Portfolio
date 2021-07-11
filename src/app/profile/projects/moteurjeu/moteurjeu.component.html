@@ -8,13 +8,13 @@
         <!-- Project's informations -->
         <mdb-card-title>
           <!-- Project Title -->
-          <h2>LE MYSTERE DES 8 GEOMETRIES DE THURSTON</h2>
+          <h2>CREATION D'UN MOTEUR DE JEU VIDEO</h2>
           <!-- Project date + duration -->
           <h4><b>Fin :</b> Juin 2021</h4>
-          <h4><b>Durée :</b> 10 mois</h4>
+          <h4><b>Durée :</b> 3 mois</h4>
         </mdb-card-title>
         <!-- Project image -->
-        <mdb-card-img class="project-picture" src="assets/LOG_proj.png"></mdb-card-img>
+        <mdb-card-img class="project-picture" src="assets/GAM_proj.PNG"></mdb-card-img>
         <!-- About the project -->
         <mdb-card-body>
           <!-- Technologies used -->
@@ -22,15 +22,15 @@
             <div class="col-sm-6">
               <div class="row">
                 <h4><b>Technologies : </b></h4>
-                <img class="dot" src="assets/skills/unity.png"/>
-                <img class="dot" src="assets/skills/c%23.png"/>
-                <img class="dot" src="assets/skills/gitlab.png"/>
+                <img class="dot" src="assets/skills/c++.png"/>
+                <img class="dot" src="assets/skills/ogre3d.png"/>
+                <img class="dot" src="assets/skills/github.png"/>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="row">
                 <h4><b>Tags : </b></h4>
-                <p> Unity3D, C#, ray-tracing/ray-marching, rendu 3D, temps réel, réalité virtuelle</p>
+                <p> Ogre3D, C++, temps réel, rendu 3D, Github</p>
               </div>
             </div>
           </div>
@@ -39,58 +39,25 @@
             <div class="col-sm-6">
               <h4><b>Description :</b></h4>
               <p>
-                Dans le cadre du projet de 4e année de département informatique à l'Insa de Rennes, j'ai eu l'occasion de participer
-                à un projet avec 8 autres camarades. Ce projet intitulé "Le mystère des 8 géométries de Thurston" consistait en
-                la <b>modélisation de scènes en 3D</b> dans chacune des 8 <b>géométries non-euclidiennes</b> (géométries de Thurston).<br>
-                L'objectif était ensuite de pouvoir se déplacer dans ces scènes à l'aide d'un casque de <b>réalité virtuelle</b> ou
-                dans un dispositif de type <b>CAVE</b> (plateforme Immersia à Rennes) et ce en <b>temps-réel</b>. Cette
-                application est basée sur le travail de notre client qui est un chercheur en mathématiques ayant créé un
-                site web permettant de visualiser chacune de ces géométries. <br>
+                Dans le cadre de cadre de mon voyage Erasmus en Suède, j'ai participé  au cours 'Virtual Interactive environments' dans lequel
+                j'ai reçu des enseignements sur la <b>création d'un moteur de jeu vidéo</b>. L'objectif des cours était d'acquérir des connaissances globales
+                afin de pouvoir ensuite créer son propre moteur avec d'autres camarades. <br>
+                C'est dans ce contexte que j'ai décidé de créer un moteur de jeu de combat (de type Mortal Kombat, ou Super Smash Bros) à l'aide du moteur de rendu <b>Ogre3D</b> et du langage <b>C++</b>.
               </p>
             </div>
             <!-- Apports du projet -->
             <div class="col-sm-6">
               <h4><b>Bilan :</b></h4>
               <p>
-                Au travers de ce projet, j'ai pu découvrir les méthodes de rendu en <b>ray-tracing</b> et <b>raymarching</b>.
-                J'ai également pu découvrir le travail dans une équipe plus grande que ce à quoi j'ai été habitué (8 personnes),
-                cela demande énormément d'organisation et d'autant plus dans le contexte du confinement auquel nous avons
-                dû être confrontés. <br>
-                J'ai également particulièrement apprécié la composante abstraction mathématique. Cela a demandé davantage de
-                travail (afin de comprendre comment fonctionnent les géométries) que de simplement coder l'application.<br>
-                Malheureusement, ayant une mobilité en Suède à partir de Janvier, je n'ai pu être présent que lors de la
-                première partie du projet (partie conception/recherche).
+                A l'aide de ce projet, j'ai pu mieux comprendre le fonctionnement ainsi que la mise en place d'un moteur de jeu simple. Au cours de ce dernier,
+                je me suis occupé de mettre en place un système Entity-Component permettant de simplifier grandement l'ajout de nouvelles fonctionnalités. Après ceci,
+                j'ai donc utilisé ce nouveau système pour ajouter des éléments importants : rendu d'éléments 3D, physique,...<br>
+                Pour conclure sur ce projet, nous avons rédigé un papier détaillant différentes fonctionnalités mises en place : <a href="assets/Game_Engine_Project.pdf" download>lien vers le papier</a>.
               </p>
             </div>
           </div>
         </mdb-card-body>
       </mdb-card>
-      <!-- Images of the project -->
-      <!-- TODO: add images from project -->
-      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-        <mdb-carousel-item>
-          <img class="d-block w-100" src="assets/projects/thurston/raymarch.PNG" alt="Capture des test de raymarching">
-        </mdb-carousel-item>
-        <mdb-carousel-item>
-          <img class="d-block w-100" src="assets/projects/thurston/minimmersia.jpg" alt="Reconstitution de Immersia à domicile">
-        </mdb-carousel-item>
-        <mdb-carousel-item>
-          <img class="d-block w-100" src="assets/projects/thurston/poucet.PNG" alt="Fonctionnalité d'enregistrement de positions dans scènes">
-        </mdb-carousel-item>
-        <mdb-carousel-item>
-          <img class="d-block w-100" src="assets/projects/thurston/immersia.jpg" alt="Plateforme Immersia">
-        </mdb-carousel-item>
-      </mdb-carousel>
-      <!-- Video TODO: ajouter une vidéo-->
-      <!--<h4 class="video-title"><b>Résultat :</b></h4>
-      <div class="row">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/c7O_dv-8rrw" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                class="video">
-        </iframe>
-      </div>
-      -->
     </div>
   </div>
 </div>
