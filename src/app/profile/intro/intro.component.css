@@ -35,21 +35,14 @@
   }
 }
 
-.background {
-  left: 0;
-  right: 0;
-  background: url("src/assets/bg2.png") no-repeat center;
-  filter: blur(3px);
-}
-
 .name-intro {
   margin: 10px;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .desc {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .social-button {
